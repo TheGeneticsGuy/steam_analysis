@@ -153,7 +153,7 @@ print(top_10_genres.to_string())
 # Let's visualize the data!
 plt.figure()
 sns.barplot(x=top_10_genres.values, y=top_10_genres.index, palette='rocket')
-plt.title('Top 5 Genres of Games on Steam', fontsize=16)
+plt.title('Top 5 Genres of Games on Steam\n(90% positive reviews and 100+ reviews)', fontsize=16)
 plt.xlabel('Number of Games', fontsize=12)
 plt.ylabel('Genre', fontsize=12)
 plt.tight_layout()
@@ -191,7 +191,7 @@ sns.regplot(
     data=steam_file_for_corr,
     x='Price_Numeric',
     y='Review_Score',
-    scatter_kws={'alpha': 0.1, 's': 15}, # Smaller, transparent points for the sake of density
+    scatter_kws={'alpha': 0.1, 's': 15}, # Smaller, transparent points because of density
     line_kws={'color': 'red', 'linewidth': 2}
 )
 plt.title('Game Price vs. User Review Score\n(Games priced $5 to \$80)', fontsize=16)
@@ -205,7 +205,7 @@ print("Generated chart: 'q2_price_vs_review.png'")
 
 # QUESTION 3 - Note, this is DEVELOPERS not PUBLISHERS. Developers actually make the games.
 print()
-print("QUESTION 3: Which developers have the best track record for releasing top rated games?")
+print("QUESTION 3: What are the top 15 developers which have the best track record for releasing top rated games?")
 print('Developers analyzed based on the following criteria:')
 print('   At least 3 published games')
 print('   Average review score of all games with 100 or more reviews')
