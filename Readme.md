@@ -8,7 +8,7 @@ The data was cleaned of games that had incomplete critical data, or of adult con
 
 The main purpose of the software is to answer specific, data-driven questions about trends in the video game market using the Pandas library for data manipulation.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo - YouTube](https://www.youtube.com/watch?v=l4RFs0-8cws)
 
 # Data Analysis Results
 
