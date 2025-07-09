@@ -139,19 +139,33 @@ Developers analyzed based on the following criteria:
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+**IDE:** Visual Studio Code
 
-{Describe the programming language that you used and any libraries.}
+**Version Control:** Git & GitHub
+
+**Programming Language:** Python 3
+
+**Key Libraries**
+
+    Pandas: The primary tool used for data loading, cleaning, manipulation, and aggregation. Essential for handling the large dataset in a structured DataFrame.
+
+    Matplotlib & Seaborn: Used together to create high-quality, professional static data visualizations, including bar charts and regression plots, to present the findings.
 
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [Pearson Correlation Coefficient Guide](https://www.scribbr.com/statistics/pearson-correlation-coefficient/)
+* [Kaggle Data for Steam](https://www.kaggle.com/datasets/joebeachcapital/top-1000-steam-games?resource=download&select=93182_steam_games.csv)
+* [Official Pandas Documentation for Stats tools](https://pandas.pydata.org/docs/)
+* [Seaborn Examples on implementing Visual Graphs](https://seaborn.pydata.org/examples/index.html)
+
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+**Automate Data Acquisition** - Live API that replaces the CSV model file with live data through the Steam Web API, allowing the analysis to be run on the most current game information.
+
+**Interactive Visualizations** - Not quite sure how hard this would be, but it would be nice to replace the static Matplotlib/Seaborn charts with actually interative plots using libraries like Plotly, allowing a user to adjust the filters on the fly.
+
+**Web Deployment** - Right now this is a terminal, command line analysis only. It would be nice to visually represent the data on a web deployment.
+
+**Deeper Analysis** - Given the vast differences between low cost Indie games versus non Indie-games, I think a more interesting comparative analysis would be in comparison these same things but comparing them across the pricing models of Indie vs not, and so on.
